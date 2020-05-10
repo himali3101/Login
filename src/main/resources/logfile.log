@@ -1,0 +1,36 @@
+2020-05-10 00:41:10.740  WARN 18168 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: None of labels [] found
+2020-05-10 00:41:10.745  INFO 18168 --- [restartedMain] com.cg.realestate.LoginApplication       : No active profile set, falling back to default profiles: default
+2020-05-10 00:41:13.455  WARN 18168 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-05-10 00:41:16.015  WARN 18168 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-10 00:41:18.955  WARN 18168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-05-10 00:41:19.364  WARN 18168 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-10 00:41:21.443  WARN 18168 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-10 00:41:27.982  INFO 18168 --- [restartedMain] com.cg.realestate.LoginApplication       : Started LoginApplication in 20.702 seconds (JVM running for 22.858)
+2020-05-10 01:34:11.193  WARN 18168 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(Unknown Source) [na:1.8.0_231]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_231]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [na:1.8.0_231]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_231]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_231]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_231]
+
+2020-05-10 03:22:41.234  WARN 18168 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1589061161220, current=DOWN, previous=UP]
+2020-05-10 03:22:56.005  WARN 18168 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: 500 : [{"timestamp":"2020-05-09T21:52:55.860+0000","status":500,"error":"Internal Server Error","message":"GENERAL","trace":"com.netflix.zuul.exception.ZuulException: Forwarding error\r\n\tat org.springframe... (16542 bytes)]
+2020-05-10 03:22:56.008  INFO 18168 --- [restartedMain] com.cg.realestate.LoginApplication       : No active profile set, falling back to default profiles: default
+2020-05-10 03:22:59.986  WARN 18168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-05-10 03:23:00.134  WARN 18168 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-10 03:23:01.585  WARN 18168 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-10 03:23:02.484  INFO 18168 --- [restartedMain] com.cg.realestate.LoginApplication       : Started LoginApplication in 10.285 seconds (JVM running for 9717.365)
+2020-05-10 03:36:19.619  WARN 18168 --- [Thread-20] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1589061979619, current=DOWN, previous=UP]
+2020-05-10 03:36:26.479  WARN 18168 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: 500 : [{"timestamp":"2020-05-09T22:06:26.475+0000","status":500,"error":"Internal Server Error","message":"GENERAL","trace":"com.netflix.zuul.exception.ZuulException: Forwarding error\r\n\tat org.springframe... (16542 bytes)]
+2020-05-10 03:36:26.486  INFO 18168 --- [restartedMain] com.cg.realestate.LoginApplication       : No active profile set, falling back to default profiles: default
+2020-05-10 03:36:28.909  WARN 18168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-05-10 03:36:28.932  WARN 18168 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-05-10 03:36:29.818  WARN 18168 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-05-10 03:36:30.725  INFO 18168 --- [restartedMain] com.cg.realestate.LoginApplication       : Started LoginApplication in 6.628 seconds (JVM running for 10525.607)
+2020-05-10 03:51:29.708  WARN 18168 --- [Thread-28] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1589062889708, current=DOWN, previous=UP]
