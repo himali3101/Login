@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cg.realestate.dao.LoginDao;
-import com.cg.realestate.model.User;
+import com.cg.realestate.model.UserM;
 
 @Service
 public class LoginService {
@@ -15,17 +15,17 @@ public class LoginService {
 	@Autowired
 	LoginDao dao;
 
-	public User addUser(User user) {
+	public UserM addUser(UserM user) {
 		return dao.save(user);
 	}
 	
-	public List<User> displayUser(){
-		List<User> users = new ArrayList<>();
+	public List<UserM> displayUser(){
+		List<UserM> users = new ArrayList<>();
 		 dao.findAll().forEach(users::add);
 		 return users;
 	}
 	
-	public List<User> findByName(String userName) {
+	public List<UserM> findByName(String userName) {
 		return dao.findByUserName(userName);
 	}
 }
