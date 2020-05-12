@@ -5,6 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
@@ -17,13 +20,17 @@ public class UserM {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int userId;
 	@Column(unique=true)
+	@NotNull
+	@Pattern(regexp = "^[A-Za-z]*$",message = "Name must be alphabet")
 	private String userName;
 	@Column
+	@NotNull
+	@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$",message = "Password must of min 8char ")
 	private String password;
 	@Column
 	private String userType;
 	
-	public UserM() {
+	public UserM() {   
 		super();
 		// TODO Auto-generated constructor stub
 	}
