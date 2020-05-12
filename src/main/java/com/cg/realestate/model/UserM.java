@@ -16,7 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 @Entity
 public class UserM {
 
-	@Id
+	@Id  
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int userId;
 	@Column(unique=true)

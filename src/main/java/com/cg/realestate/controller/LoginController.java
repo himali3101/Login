@@ -50,7 +50,7 @@ public class LoginController {
 		service.addUser(user);
 		return "{\r\n" + 
 				"		\"msg\":\"User Added Successfully\"\r\n" + 
-				"	}"; 
+				"	}";   
 	}
 	
 	

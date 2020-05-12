@@ -1,5 +1,5 @@
 package com.cg.realestate.config;
-
+ 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -28,8 +28,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		// TODO Auto-generated method stub
-		http.csrf().disable().authorizeRequests()
-		.antMatchers("/**").permitAll()
+		http.csrf().disable().cors().disable().authorizeRequests()
+		.antMatchers("/**").permitAll() 
 		.antMatchers("/login/authenticate").permitAll()
 		.and().sessionManagement()
 		.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
