@@ -1,7 +1,6 @@
 package com.cg.realestate.model;
 
-// this model is jsut to make it easy for the Authentication api to parse incoming credentials
-// this also defines the field names that should be passed through json
+
 
 public class AuthenticationRequest {
 

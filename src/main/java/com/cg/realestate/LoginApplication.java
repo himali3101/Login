@@ -19,7 +19,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients("com.cg.realestate")
 @EnableSwagger2
 @EnableHystrix
 public class LoginApplication {
@@ -33,7 +32,7 @@ public class LoginApplication {
         return new Docket(DocumentationType.SWAGGER_2)
                    .select()
                    .paths(PathSelectors.any())
-                   .apis(RequestHandlerSelectors.basePackage("com.cgrealestate"))
+                   .apis(RequestHandlerSelectors.basePackage("com.cg.realestate"))
                    .build()
                    .apiInfo(myApiInfo());
            }
@@ -45,9 +44,9 @@ public class LoginApplication {
                  "API CREATION",
                  "1.0",
                  "Free to Use",
-                  new Contact("Himali Gunjal","/property" ,"himaligunjal31@gmail.com"),
+                  new Contact("Himali Gunjal","/login" ,"himaligunjal31@gmail.com"),
                  "API licence",
-                 "/limits",
+                 "/signup",
                  Collections.emptyList());
         return apiInfo;  }
 }

@@ -48,9 +48,7 @@ public class LoginController {
 			@ApiResponse(code = 500, message = "Failure", response = UserM.class) })
 	public String singUp(@RequestBody UserM user) {
 		service.addUser(user);
-		return "{\r\n" + 
-				"		\"msg\":\"User Added Successfully\"\r\n" + 
-				"	}";   
+		return "signup done";   
 	}
 	
 	
